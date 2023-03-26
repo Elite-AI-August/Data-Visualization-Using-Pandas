@@ -138,3 +138,9 @@ df_3Months.plot(kind='pie', y='AAPL', legend=False, autopct='%.f')
 ![Pie Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-11.png)
 Represent the data of all the columns in multiple pie charts as subplots
 ![Pie Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-12.png)
+## Scatter Plot
+Scatter plots plot data points on the x and y axes to show the correlation between two variables. 
+```
+df.plot(kind='scatter', x='MSFT', y='AAPL', figsize=(9,6), color='Green')
+```
+![Scatter Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-13.png)
