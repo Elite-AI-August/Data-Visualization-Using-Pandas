@@ -127,3 +127,14 @@ df.plot(kind='area', stacked=False, figsize=(9,6))
 ```
 ![Area Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-10.png)
 
+
+## Pie Plot
+
+A pie plot is a great proportional representation of numerical data in a column.
+```
+df_3Months.index=['March', 'April', 'May']
+df_3Months.plot(kind='pie', y='AAPL', legend=False, autopct='%.f')
+```
+![Pie Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-11.png)
+Represent the data of all the columns in multiple pie charts as subplots
+![Pie Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-12.png)
