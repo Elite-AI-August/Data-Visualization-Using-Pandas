@@ -113,3 +113,17 @@ We can create horizontal box plots, like horizontal bar charts, by assigning Fal
 df.plot(kind='box', vert=False, figsize=(9,6))
 ```
 ![Box Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-8.png)
+## Area Plot
+
+An area plot is an extension of a line chart that fills the region between the line chart and the x-axis with a color. If more than one area chart displays in the same plot, different colors distinguish different area charts.
+```
+df.plot(kind='area', figsize=(9,6))
+```
+![Area Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-9.png)
+
+Creates a stacked area plot by default:
+```
+df.plot(kind='area', stacked=False, figsize=(9,6))
+```
+![Area Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-10.png)
+
