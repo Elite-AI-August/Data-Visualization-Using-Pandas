@@ -22,6 +22,11 @@ We're going to work on the weekly closing price of the Facebook, Microsoft, and 
 
 ## Programing Language
 - Python
+## Libraries
+
+-  Pandas
+-  Numpy
+-  Matplotlib
 ## Line Plot
 
 The default plot is the line plot that plots the index on the x-axis and the other numeric columns in the DataFrame on the y-axis.
@@ -152,3 +157,20 @@ df.plot(kind='hexbin', x='MSFT', y='AAPL', gridsize=10, figsize=(10,6))
 ```
 ![Hexbin Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-15.png)
 
+
+## KDE Plot
+Kernel Density Estimate, also known as KDE,visualizes the probability density of a continuous and non-parametric data variable. This plot uses Gaussian kernels to estimate the probability density function (PDF) internally. 
+```
+df.plot(kind='kde')
+```
+![KDE Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-16.png)
+We're can also specify the bandwidth that affects the plot smoothness in the KDE plot
+```
+df.plot(kind='kde', bw_method=0.1)
+```
+![KDE Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-17.png)
+```
+df.plot(kind='kde', bw_method=1)
+```
+![KDE Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-18.png)
+As we can see, selecting a small bandwidth leads to under-smoothing, which means the density plot appears as a combination of individual peaks. On the contrary, a huge bandwidth leads to over-smoothing, which means the density plot appears as unimodal distribution.
