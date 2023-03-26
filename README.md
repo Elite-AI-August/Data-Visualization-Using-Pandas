@@ -85,3 +85,17 @@ df_3Months.plot(kind='bar', stacked=True, figsize=(9,6))
 ```
 
 ![Bar Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-4.png)
+
+## Histogram
+
+A histogram is a type of bar chart that represents the distribution of numerical data where the x-axis represents the bin ranges while the y-axis represents the data frequency within a certain interval. 
+```
+df[['MSFT', 'FB']].plot(kind='hist', bins=25, alpha=0.6, figsize=(9,6))
+```
+![Histogram](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-21.png)
+
+A histogram can also be stacked. Let's try it out:
+```
+df[['MSFT', 'FB']].plot(kind='hist', bins=25, alpha=0.6, stacked=True, figsize=(9,6))
+```
+![Histogram](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-6.png)
