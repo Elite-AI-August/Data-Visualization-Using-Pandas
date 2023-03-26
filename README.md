@@ -99,3 +99,17 @@ A histogram can also be stacked. Let's try it out:
 df[['MSFT', 'FB']].plot(kind='hist', bins=25, alpha=0.6, stacked=True, figsize=(9,6))
 ```
 ![Histogram](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-6.png)
+
+## Box Plot
+
+A box plot consists of three quartiles and two whiskers that summarize the data in a set of indicators: minimum, first quartile, median, third quartile, and maximum values. A box plot conveys useful information, such as the interquartile range (IQR), the median, and the outliers of each data group.
+```
+df.plot(kind='box', figsize=(9,6))
+```
+![Box Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-7.png)
+
+We can create horizontal box plots, like horizontal bar charts, by assigning False to the vert argument
+```
+df.plot(kind='box', vert=False, figsize=(9,6))
+```
+![Box Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-8.png)
