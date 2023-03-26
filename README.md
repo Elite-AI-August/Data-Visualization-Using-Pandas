@@ -144,3 +144,11 @@ Scatter plots plot data points on the x and y axes to show the correlation betwe
 df.plot(kind='scatter', x='MSFT', y='AAPL', figsize=(9,6), color='Green')
 ```
 ![Scatter Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-13.png)
+
+## Hexbin Plot
+When the data is very dense, a hexagon bin plot, also known as a hexbin plot, can be an alternative to a scatter plot. In other words, when the number of data points is enormous, and each data point can't be plotted separately, it's better to use this kind of plot that represents data in the form of a honeycomb. Also, the color of each hexbin defines the density of data points in that range.
+```
+df.plot(kind='hexbin', x='MSFT', y='AAPL', gridsize=10, figsize=(10,6))
+```
+![Hexbin Plot](https://github.com/SulemanMughal/Data-Visualization-Using-Pandas/blob/main/name-15.png)
+
